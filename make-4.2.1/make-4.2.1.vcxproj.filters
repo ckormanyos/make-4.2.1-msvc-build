@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\w32">
+      <UniqueIdentifier>{6d0c99eb-ce5c-4aa6-99be-68e55c71ccc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\glob">
+      <UniqueIdentifier>{77339fb8-34df-4cba-b4a8-4efc1b5c8610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\w32">
+      <UniqueIdentifier>{a9c680ef-62d9-4749-b509-4124b113c10a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\glob">
+      <UniqueIdentifier>{056fdef4-7df9-44ee-a3e9-4f361bc198ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ar.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="arscan.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="commands.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="default.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="dir.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="expand.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="file.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="function.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="getloadavg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="getopt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="getopt1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="guile.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="hash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="strcache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="implicit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="job.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="load.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="output.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="read.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="remake.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="remote-stub.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="rule.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="signame.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="variable.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="version.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vpath.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="w32\compat\dirent.c">
+      <Filter>src\w32</Filter>
+    </ClCompile>
+    <ClCompile Include="w32\compat\posixfcn.c">
+      <Filter>src\w32</Filter>
+    </ClCompile>
+    <ClCompile Include="w32\subproc\misc.c">
+      <Filter>src\w32</Filter>
+    </ClCompile>
+    <ClCompile Include="w32\pathstuff.c">
+      <Filter>src\w32</Filter>
+    </ClCompile>
+    <ClCompile Include="w32\w32os.c">
+      <Filter>src\w32</Filter>
+    </ClCompile>
+    <ClCompile Include="w32\subproc\sub_proc.c">
+      <Filter>src\w32</Filter>
+    </ClCompile>
+    <ClCompile Include="w32\subproc\w32err.c">
+      <Filter>src\w32</Filter>
+    </ClCompile>
+    <ClCompile Include="glob\fnmatch.c">
+      <Filter>src\glob</Filter>
+    </ClCompile>
+    <ClCompile Include="glob\glob.c">
+      <Filter>src\glob</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commands.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="dep.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="filedef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="getopt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="gettext.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="gmk-default.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="hash.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="job.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="output.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="makeint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="rule.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="variable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="vmsdir.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="w32\include\dirent.h">
+      <Filter>include\w32</Filter>
+    </ClInclude>
+    <ClInclude Include="w32\include\pathstuff.h">
+      <Filter>include\w32</Filter>
+    </ClInclude>
+    <ClInclude Include="w32\subproc\proc.h">
+      <Filter>include\w32</Filter>
+    </ClInclude>
+    <ClInclude Include="w32\include\sub_proc.h">
+      <Filter>include\w32</Filter>
+    </ClInclude>
+    <ClInclude Include="w32\include\w32err.h">
+      <Filter>include\w32</Filter>
+    </ClInclude>
+    <ClInclude Include="glob\fnmatch.h">
+      <Filter>include\glob</Filter>
+    </ClInclude>
+    <ClInclude Include="glob\glob.h">
+      <Filter>include\glob</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
