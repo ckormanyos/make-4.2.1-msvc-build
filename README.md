@@ -25,3 +25,4 @@ Minor changes in the source code have been undertaken.
   - Leave all other warnings unchanged.
   - Change the name of one _shadowed_ variable.
   - Update the legacy MSVC workspace and adapt its naming.
+  - Add a solution configuration `x64` with settings initially copied from `x86` in the usual _MSVC_ way.
