@@ -350,7 +350,15 @@ char *ttyname (int);
 /* #undef HAVE_WAITPID */
 
 /* Build host information. */
-#define MAKE_HOST "Windows32"
+#if defined(_MSC_VER)
+#if defined(_WIN64)
+#define MAKE_HOST "\"MAKE_HOST\" x64 " __DATE__
+#else
+#define MAKE_HOST "\"MAKE_HOST\" x86 " __DATE__
+#endif
+#else
+#define MAKE_HOST "\"MAKE_HOST\" unknown " __DATE__
+#endif
 
 /* Define to 1 to enable job server support in GNU make. */
 #define MAKE_JOBSERVER 1
