@@ -1,4 +1,7 @@
-# make-4.2.1-msvc-build
+make-4.2.1-msvc-build
+==================
+
+[![Build Status](https://github.com/ckormanyos/make-4.2.1-msvc-build/actions/workflows/make-4.2.1.yml/badge.svg)](https://github.com/ckormanyos/make-4.2.1-msvc-build/actions)
 
 This repository takes the source code for GNUmake 4.2.1
 within the file `make-4.2.1.tar.gz`
@@ -13,9 +16,9 @@ Here are the instructions to build make-4.2.1-msvc-build.
   - Open `make-4.2.1.sln` in MSVC 14.2 --- i.e., Microsoft(R) VisualStudio(R) 2019 or higher (the Community Edition works also).
   - Select Debug/Release as desired in the usual way.
   - Select x86 or x64 as desired in the usual way.
-  - Rebuild solution and find the build artifacts including `make-4.2.1.exe` in the standard output path location(s).
+  - Rebuild solution and find the executable file `make-4.2.1.exe` in the standard output path location.
 
-You might want to rename the executable file to `make.exe`.
+You might want to rename the executable from `make-4.2.1.exe` file to simply `make.exe`.
 The resulting executable file `make.exe` can be used just like you would use `make` on `*nix`.
 
 # Changes
