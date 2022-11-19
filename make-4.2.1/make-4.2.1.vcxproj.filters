@@ -21,6 +21,12 @@
     <Filter Include="include\glob">
       <UniqueIdentifier>{056fdef4-7df9-44ee-a3e9-4f361bc198ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{03d41418-2677-40a5-9b55-c7997c77e502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\ckormanyos">
+      <UniqueIdentifier>{d5fb72f7-176d-4981-b329-e6857821b49f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ar.c">
@@ -202,5 +208,10 @@
     <ClInclude Include="glob\glob.h">
       <Filter>include\glob</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tests\ckormanyos\Makefile">
+      <Filter>tests\ckormanyos</Filter>
+    </None>
   </ItemGroup>
 </Project>

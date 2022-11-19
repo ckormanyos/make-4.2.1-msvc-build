@@ -28,6 +28,18 @@ jobs:
         run: |
           MSBuild -m make-4.2.1.sln -p:Configuration=Release -p:Platform=x64 /t:Rebuild
           dir %cd%\x64\Release\make-4.2.1.exe
+          cd tests\ckormanyos
+          copy /Y ..\..\x64\Release\make-4.2.1.exe .\make.exe
+          echo.
+          echo run .\make -v
+          echo.
+          .\make -v
+          echo.
+          echo run make with Makefile and findstr Hello World
+          echo.
+          .\make | findstr "Hello World"
+          echo.
+          cd ..\..
       - uses: actions/upload-artifact@v3
         with:
           name: make-4.2.1-win64-msvc
