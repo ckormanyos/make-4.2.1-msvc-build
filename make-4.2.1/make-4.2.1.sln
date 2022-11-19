@@ -9,25 +9,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_doc", "_doc", "{03772140-F
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{90C70ED9-D1CD-476B-B60B-A9F0DE5411FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{0C4E5B29-218D-4D3B-AD08-B0C73E8724E6}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\make-4.2.1.yml = ..\.github\workflows\make-4.2.1.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E96B5060-3240-4723-91C9-E64F1C877A04}.Debug|x64.ActiveCfg = Debug|x64
 		{E96B5060-3240-4723-91C9-E64F1C877A04}.Debug|x64.Build.0 = Debug|x64
-		{E96B5060-3240-4723-91C9-E64F1C877A04}.Debug|x86.ActiveCfg = Debug|Win32
-		{E96B5060-3240-4723-91C9-E64F1C877A04}.Debug|x86.Build.0 = Debug|Win32
 		{E96B5060-3240-4723-91C9-E64F1C877A04}.Release|x64.ActiveCfg = Release|x64
 		{E96B5060-3240-4723-91C9-E64F1C877A04}.Release|x64.Build.0 = Release|x64
-		{E96B5060-3240-4723-91C9-E64F1C877A04}.Release|x86.ActiveCfg = Release|Win32
-		{E96B5060-3240-4723-91C9-E64F1C877A04}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C4E5B29-218D-4D3B-AD08-B0C73E8724E6} = {90C70ED9-D1CD-476B-B60B-A9F0DE5411FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {528556CB-5526-4591-BA02-76BD8D781689}

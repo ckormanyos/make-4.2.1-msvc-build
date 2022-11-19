@@ -1,0 +1,34 @@
+﻿# ------------------------------------------------------------------------------
+#  Copyright Christopher Kormanyos 2022.
+#  Distributed under the Boost Software License,
+#  Version 1.0. (See accompanying file LICENSE_1_0.txt
+#  or copy at http://www.boost.org/LICENSE_1_0.txt)
+# ------------------------------------------------------------------------------
+
+name: make-4.2.1
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+jobs:
+  msvc-release-x64:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
+      - uses: actions/checkout@v1
+      - uses: ilammy/msvc-dev-cmd@v1
+        with:
+          toolset: 14.2
+      - name: msvc-release-x64
+        shell: cmd
+        working-directory: ./make-4.2.1
+        run: |
+          MSBuild -m make-4.2.1.sln -p:Configuration=Release -p:Platform=x64 /t:Rebuild
+          dir %cd%\x64\Release\make-4.2.1.exe
+      - uses: actions/upload-artifact@v3
+        with:
+          name: make-4.2.1-win64-msvc
+          path: x64/Release/make-4.2.1.exe
