@@ -29,8 +29,11 @@ jobs:
           MSBuild -m make-4.2.1.sln -p:Configuration=Release -p:Platform=x64 /t:Rebuild
           dir %cd%\x64\Release\make-4.2.1.exe
           cd tests\ckormanyos
-          cp /Q ..\..\x64\Release\make-4.2.1.exe make.exe
-          make
+          cp /Q ..\..\x64\Release\make-4.2.1.exe .
+          echo run .\make-4.2.1.exe -v
+          .\make-4.2.1.exe -v
+          echo run .\make-4.2.1.exe with Makefile
+          .\make-4.2.1.exe
           cd ..\..
       - uses: actions/upload-artifact@v3
         with:
