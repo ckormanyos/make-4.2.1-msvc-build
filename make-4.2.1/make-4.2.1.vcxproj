@@ -161,6 +161,12 @@
     <ClInclude Include="w32\include\w32err.h" />
     <ClInclude Include="w32\subproc\proc.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="tests\ckormanyos\Makefile">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

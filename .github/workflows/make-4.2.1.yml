@@ -28,6 +28,10 @@ jobs:
         run: |
           MSBuild -m make-4.2.1.sln -p:Configuration=Release -p:Platform=x64 /t:Rebuild
           dir %cd%\x64\Release\make-4.2.1.exe
+          cd tests\ckormanyos
+          cp /Q ..\..\x64\Release\make-4.2.1.exe make.exe
+          make
+          cd ..\..
       - uses: actions/upload-artifact@v3
         with:
           name: make-4.2.1-win64-msvc
