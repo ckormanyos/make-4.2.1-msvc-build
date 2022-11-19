@@ -26,3 +26,5 @@ Minor changes in the source code have been undertaken.
   - Change the name of one _shadowed_ variable.
   - Update the legacy MSVC workspace and adapt its naming.
   - Add a solution configuration `x64` with settings initially copied from `x86` in the usual _MSVC_ way.
+  - Eliminate the `x86` configuration and retain only 64-bit `x64`.
+  - Upload build artifact in CI for `make-4.2.1-win64-msvc`, see also discussion in [issue 1](https://github.com/ckormanyos/make-4.2.1-msvc-build/issues/1).
