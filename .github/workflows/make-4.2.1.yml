@@ -31,4 +31,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: make-4.2.1-win64-msvc
-          path: x64/Release/make-4.2.1.exe
+          path: ./make-4.2.1/x64/Release/make-4.2.1.exe
