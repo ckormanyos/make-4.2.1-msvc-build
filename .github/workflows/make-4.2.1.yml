@@ -1,5 +1,5 @@
 ﻿# ------------------------------------------------------------------------------
-#  Copyright Christopher Kormanyos 2022 - 2023.
+#  Copyright Christopher Kormanyos 2022 - 2024.
 #  Distributed under the Boost Software License,
 #  Version 1.0. (See accompanying file LICENSE_1_0.txt
 #  or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -13,12 +13,12 @@ on:
   pull_request:
 jobs:
   msvc-release-x64:
-    runs-on: windows-2022
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: '0'
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ilammy/msvc-dev-cmd@v1
         with:
           toolset: 14.2
@@ -40,7 +40,7 @@ jobs:
           .\make | findstr "Hello World"
           echo.
           cd ..\..
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: make-4.2.1-win64-msvc
           path: ./make-4.2.1/x64/Release/make-4.2.1.exe
