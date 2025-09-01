@@ -26,6 +26,10 @@ this program.  If not, see <http://www.gnu.org/licenses/>.  */
 
 #define _GNU_SOURCE 1
 
+//#if defined(WINDOWS32)
+//#error test
+//#endif
+
 /* AIX requires this to be the first thing in the file.  */
 #if HAVE_ALLOCA_H
 # include <alloca.h>
@@ -351,8 +355,8 @@ char *strsignal (int signum);
 # include <malloc.h>
 # define pipe(_p)        _pipe((_p), 512, O_BINARY)
 # define kill(_pid,_sig) w32_kill((_pid),(_sig))
-/* MSVC and Watcom C don't have ftruncate.  */
-# if defined(_MSC_VER) || defined(__WATCOMC__)
+/* MSVC and Watcom C and TinyCC (win32) don't have ftruncate.  */
+# if defined(_MSC_VER) || defined(__WATCOMC__) || defined(__TINYC__)
 #  define ftruncate(_fd,_len) _chsize(_fd,_len)
 # endif
 /* MinGW64 doesn't have _S_ISDIR.  */
