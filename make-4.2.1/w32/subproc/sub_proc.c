@@ -18,7 +18,7 @@ this program.  If not, see <http://www.gnu.org/licenses/>.  */
 #include <stdlib.h>
 #include <stdio.h>
 #include <io.h>         /* for _get_osfhandle */
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(__TINYC__)
 # include <stddef.h>    /* for intptr_t */
 #else
 # include <stdint.h>
