@@ -32,4 +32,4 @@ Minor changes in the source code have been undertaken.
   - Add a solution configuration `x64` with settings initially copied from `x86` in the usual _MSVC_ way.
   - Eliminate the `x86` configuration and retain only the 64-bit solution configuration `x64`.
   - Upload build artifact in CI for `make-4.2.1-win64-msvc`, see also discussion in [issue 1](https://github.com/ckormanyos/make-4.2.1-msvc-build/issues/1).
-  - Add `TCC`-support. `TCC` is the tiny C-Compiler, which is a very efficient and portable standalone C-Compiler. For further information, please see the discussion in [/ckormanyos/make-4.2.1-msvc-build/pull/10 ](https://github.com/ckormanyos/make-4.2.1-msvc-build/pull/10)
+  - Add `TCC`-support (from @jamosdev). `TCC` is the tiny C-Compiler, which is a very efficient and portable standalone C-Compiler. For further information, please see the discussion in [pr 10 ](https://github.com/ckormanyos/make-4.2.1-msvc-build/pull/10)
